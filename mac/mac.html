@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+   
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        
+		<a href="#" class="logo"><img src="logo1.avif" alt="deer" style="width: 150px; height: 100x;"></a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="navbar" id="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="educ.html">Education</a>
+            <a href="#">Contact</a>
+            <a href="#">Skills</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Marknel Gonzales </h1>
+            <h3>Fronted Developer Aspirant</h3>
+            <p>I am currently studying BSIT at Holy Cross Pampanga,<br> 
+            which is a crucial step toward my dream of becoming a developer.<br> 
+            This program equips me with essential knowledge and skills while<br> connecting me with industry professionals.<br> 
+            With dedication and passion, I am confident that I will achieve my goal<br> and make a positive impact in the IT field.</p>
+
+            
+        </div>
+        <img class="one" src="homepg.jpg">
+        <div class="home-scie">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-telegram'></i></a>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+
+    <script>
+        function toggleMenu() {
+    var nav = document.getElementById('navbar');
+    nav.classList.toggle('active');
+    if (nav.classList.contains('active')) {
+        nav.style.right = '0';
+    } else {
+        nav.style.right = '-200px';
+    }
+}
+    </script>
+</body>
+</html>
